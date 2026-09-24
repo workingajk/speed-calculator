@@ -12,7 +12,7 @@ function Cat() {
             let arr = obj.data.map(item=>item.fact)
             console.log(arr);
             
-        // setFacts([obj.data.map(item=>item.fact)])
+         setFacts(arr)
     }
         
         // setFacts()
@@ -27,7 +27,9 @@ function Cat() {
     <button onClick={getFact} className='bg-green-200 py-1 px-3'> Get Cat Fact</button>
     <div>
         {facts.length>0? 
-        {facts}
+        {facts.map((fact, index) => (
+                <p key={index}>{fact}</p>
+            ))}
          : 
          "click for facts"
          }
