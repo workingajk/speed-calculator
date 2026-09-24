@@ -27,9 +27,9 @@ function Cat() {
     <button onClick={getFact} className='bg-green-200 py-1 px-3'> Get Cat Fact</button>
     <div>
         {facts.length>0? 
-        {facts.map((fact, index) => (
+        facts.map((fact, index) => (
                 <p key={index}>{fact}</p>
-            ))}
+            ))
          : 
          "click for facts"
          }
