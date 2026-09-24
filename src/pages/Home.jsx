@@ -53,6 +53,7 @@ function Home() {
                         {" "}
                         Calculate
                     </button>
+<p>https://github.com/workingajk/speed-calculator</p>
                 </div>
             </div>
         </>
